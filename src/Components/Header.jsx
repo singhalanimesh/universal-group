@@ -7,7 +7,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const threshold = 50;
+      const threshold = 48;
       setIsScrolled(scrollTop > threshold);
     };
 
@@ -19,14 +19,14 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full transition-colors duration-300 ${
+      className={`z-10 fixed top-0 left-0 w-full duration-500 ${
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="py-8 h-20 flex justify-between bg-transparent">
-        <div className="pl-8">
+        <div className="pl-16">
           <Link to="/">
-            <div className="fixed pl-2 -mt-1 text-[#003866] border-l-[#18d26e] border-l-4 font-bold text-2xl tracking-[0.2em]">
+            <div className="fixed pl-3 -mt-1 text-[#003866] border-l-[#18d26e] border-l-4 font-bold text-2xl tracking-[0.2em]">
               UNIVERSAL GROUP
             </div>
           </Link>
@@ -47,11 +47,9 @@ const Header = () => {
               PORTFOLIO
             </div>
           </Link>
-          <Link to="/events">
-            <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
-              EVENTS
-            </div>
-          </Link>
+          <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
+            EVENTS
+          </div>
           <Link to="/services">
             <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
               SERVICES
