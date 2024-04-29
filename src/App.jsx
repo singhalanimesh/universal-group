@@ -12,6 +12,7 @@ import Career from "./Components/Career";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
 import Awards from "./Components/Awards";
+import UniversalTeam from "./Components/UniversalTeam";
 
 const AppLayout = () => {
   return (
@@ -34,7 +35,7 @@ const appRouter = createBrowserRouter([
         element: <Body />,
       },
       {
-        path: "/about",
+        path: "/about-us",
         element: <About />,
       },
       {
@@ -54,8 +55,12 @@ const appRouter = createBrowserRouter([
         element: <Portfolio />,
       },
       {
-        path: "/awards-and-achivements",
+        path: "/awards-and-achievements",
         element: <Awards />,
+      },
+      {
+        path: "/universal-team",
+        element: <UniversalTeam />,
       },
     ],
   },

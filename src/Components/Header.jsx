@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import Dropdown from "./Dropdown";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const threshold = 48;
+      const threshold = 28;
       setIsScrolled(scrollTop > threshold);
     };
 
@@ -20,7 +22,7 @@ const Header = () => {
   return (
     <header
       className={`z-10 fixed top-0 left-0 w-full duration-500 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        isScrolled ? "bg-white shadow-md" : "bg-transparent py-4"
       }`}
     >
       <div className="py-8 h-20 flex justify-between bg-transparent">
@@ -32,38 +34,37 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex pr-16">
-          <Link to="/">
-            <div className="px-4 transitionduration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
-              HOME
-            </div>
+          <Link
+            to="/"
+            className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+          >
+            HOME
           </Link>
-          <Link to="/about">
-            <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
-              ABOUT
-            </div>
-          </Link>
-          <Link to="/portfolio">
-            <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
-              PORTFOLIO
-            </div>
-          </Link>
+          <Dropdown
+            title={"ABOUT"}
+            links={["about-us", "awards-and-achievements", "universal-team"]}
+          />
+          <Dropdown title={"PORTFOLIO"} links={["portfolio"]} />
           <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
             EVENTS
           </div>
-          <Link to="/services">
-            <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
-              SERVICES
-            </div>
+          <Link
+            to="/services"
+            className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+          >
+            SERVICES
           </Link>
-          <Link to="/career">
-            <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
-              CAREER
-            </div>
+          <Link
+            to="/career"
+            className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+          >
+            CAREER
           </Link>
-          <Link to="/contact">
-            <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
-              CONTACT US
-            </div>
+          <Link
+            to="/contact"
+            className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+          >
+            CONTACT US
           </Link>
         </div>
       </div>
