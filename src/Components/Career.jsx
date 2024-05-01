@@ -20,7 +20,7 @@ const Career = () => {
           /></div>
 
           <div className="text-justify ">
-            <div className="my-4 text-3xl font-semibold text-[#003866]">
+            <div className="my-4 text-3xl font-semibold text-[#003866] w-[444px]">
               Current Openings
             </div>
             {careerText.map(

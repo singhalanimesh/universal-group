@@ -10,7 +10,8 @@ import About from "./Components/About";
 import Services from "./Components/Services";
 import Career from "./Components/Career";
 import Contact from "./Components/Contact";
-import Portfolio from "./Components/Portfolio";
+import CurrentPortfolio from "./Components/CurrentPortfolio";
+import CompletedPortfolio from "./Components/CompletedPortfolio";
 import Awards from "./Components/Awards";
 import UniversalTeam from "./Components/UniversalTeam";
 
@@ -51,8 +52,12 @@ const appRouter = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/portfolio",
-        element: <Portfolio />,
+        path: "/completed-projects",
+        element: <CompletedPortfolio />,
+      },
+      {
+        path: "/current-projects",
+        element: <CurrentPortfolio />,
       },
       {
         path: "/awards-and-achievements",

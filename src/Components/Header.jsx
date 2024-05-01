@@ -52,7 +52,7 @@ const Header = () => {
             title={"ABOUT"}
             links={["about-us", "awards-and-achievements", "universal-team"]}
           />
-          <Dropdown title={"PORTFOLIO"} links={["portfolio"]} />
+          <Dropdown title={"PORTFOLIO"} links={["current-projects","completed-projects"]} />
           {/* <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
             EVENTS
           </div> */}
