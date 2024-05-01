@@ -3,22 +3,22 @@ import {
   aboutText,
   aboutTextService,
   aboutTextCompany,
-} from "../utils/textdata";
+} from "../utils/textData";
 import Card from "./Card";
 
 const About = () => {
   return (
     <div>
       <div className="bg-[#e3f5f8] pt-28 pb-8">
-        <div className="m-auto w-[1110px] flex-col align-middle ">
+        <div className="m-auto w-[1110px] flex-col align-middle text-center">
           <div>
-            <h1 className="w-2/12 m-auto mb-8 text-center text-[32px] font-bold border-b-[3px] border-[#18d26e]">
+            <h1 className="w-2/12 m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e]">
               ABOUT US
             </h1>
-            <p className=" text-center mb-8 pb-7 text-[15px]">
+            <p className="mb-8 pb-7 text-[15px]">
               {aboutText["p1"]}
             </p>
-            <p className="text-center mb-8 pb-7 text-[15px]">
+            <p className="mb-8 pb-7 text-[15px]">
               {aboutText["p2"]}
             </p>
           </div>
@@ -34,12 +34,12 @@ const About = () => {
       </div>
 
       <div className="pt-12">
-        <div className="m-auto w-[1110px] flex-col align-middle text-gray-600">
+        <div className="m-auto w-[1110px] flex-col align-middle text-gray-600 text-center">
           <div>
-            <h1 className="w-7/12 m-auto mb-8 text-center text-[22px] font-bold border-b-[3px] border-[#18d26e]">
+            <h1 className="w-7/12 m-auto mb-8 text-[22px] font-bold border-b-[3px] border-[#18d26e]">
               UNIVERSAL OFFERS SOLUTIONS FOR YOUR BUILDINGS
             </h1>
-            <p className="text-center mb-8 pb-7 px-12 text-[15px]">
+            <p className="mb-8 pb-7 px-12 text-[15px]">
               {aboutText["p3"]}
             </p>
           </div>
@@ -61,7 +61,7 @@ const About = () => {
           </div>
 
           <div>
-            <h1 className="w-5/12 m-auto my-8 pt-4 text-center text-[22px] font-bold border-b-[3px] border-[#18d26e]">
+            <h1 className="w-5/12 mx-auto my-8 pt-4 text-[22px] font-bold border-b-[3px] border-[#18d26e]">
               UNIVERSAL GROUP COMPRISES OF
             </h1>
             <p className="text-center mb-8 pb-7 text-[15px]">

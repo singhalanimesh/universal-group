@@ -1,12 +1,12 @@
-import { serviceText, serviceTextCard } from "../utils/textdata";
+import { serviceText, serviceTextCard } from "../utils/textData";
 import Card from "./Card";
 
 const Services = () => {
   return (
     <div className="bg-[#e3f5f8] pt-28">
-      <div className="m-auto w-[1110px] flex-col align-middle">
+      <div className="m-auto w-[1110px] text-center flex-col align-middle">
         <div>
-          <h1 className="w-3/12 m-auto mb-8 text-center text-[32px] font-bold border-b-[3px] border-[#18d26e]">
+          <h1 className="w-3/12 m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e]">
             OUR SERVICES
           </h1>
           <p className="text-justify mb-8 pb-7">{serviceText["p"]}</p>

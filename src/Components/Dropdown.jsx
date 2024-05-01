@@ -14,6 +14,10 @@ const Dropdown = ({ title, links }) => {
     setIsOpen(false);
   };
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div
       className="relative"
@@ -39,7 +43,9 @@ const Dropdown = ({ title, links }) => {
               <Link
                 key={index}
                 to={`/${value}`}
-                onClick={closeToggle}
+                onClick={() => {
+                  closeToggle(), handleClick();
+                }}
                 className="block px-4 py-2 text-[#003866] hover:text-[#18d26e]"
               >
                 {value

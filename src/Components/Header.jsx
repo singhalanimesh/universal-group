@@ -12,12 +12,17 @@ const Header = () => {
       const threshold = 28;
       setIsScrolled(scrollTop > threshold);
     };
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <header
@@ -27,16 +32,19 @@ const Header = () => {
     >
       <div className="py-8 h-20 flex justify-between bg-transparent">
         <div className="pl-16">
-          <Link to="/">
-            <div className="fixed pl-3 -mt-1 text-[#003866] border-l-[#18d26e] border-l-4 font-bold text-2xl tracking-[0.2em]">
-              UNIVERSAL GROUP
-            </div>
+          <Link
+            to="/"
+            className="fixed pl-3 -mt-1 text-[#003866] border-l-[#18d26e] border-l-4 font-bold text-2xl tracking-[0.2em]"
+            onClick={handleClick}
+          >
+            UNIVERSAL GROUP
           </Link>
         </div>
         <div className="flex pr-16">
           <Link
             to="/"
             className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+            onClick={handleClick}
           >
             HOME
           </Link>
@@ -45,24 +53,27 @@ const Header = () => {
             links={["about-us", "awards-and-achievements", "universal-team"]}
           />
           <Dropdown title={"PORTFOLIO"} links={["portfolio"]} />
-          <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
+          {/* <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
             EVENTS
-          </div>
+          </div> */}
           <Link
             to="/services"
             className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+            onClick={handleClick}
           >
             SERVICES
           </Link>
           <Link
             to="/career"
             className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+            onClick={handleClick}
           >
             CAREER
           </Link>
           <Link
             to="/contact"
             className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+            onClick={handleClick}
           >
             CONTACT US
           </Link>

@@ -47,6 +47,10 @@ export const aboutTextCompany = [
   },
 ];
 
+export const universalTeam = {
+  p: "UNIVERSAL is a happy group with absolutely no discrimination based on class, creed, religion, gender, what-so-ever. The happy photograph of our Annual Motivation Tour is a testimony to this cohesiveness.",
+};
+
 export const serviceText = {
   p: "We offer the full spectrum of services to help organizations work better. We have a dedicated service team that specialized in Airconditioning, Ventilation, Fire Protection, Power Management in Eastern India. We pride ourselves on service excellence to the residential, commercial and industrial markets whether it is the supply of a new solution or maintenance of an existing system.",
 };
@@ -78,44 +82,126 @@ export const serviceTextCard = [
   },
 ];
 
-export const contacttextm = [
+export const careerText = [
+  {
+    role: "Design Engineer",
+    experience: "Min. 1yr in HVAC field",
+    description: "HVAC drawing & Design for chiller",
+    skills: "AUTOCAD Proficiency",
+  },
+  {
+    role: "Design Engineer",
+    experience: "Min. 1yr in HVAC field",
+    description: "HVAC drawing & Design for chiller",
+    skills: "AUTOCAD Proficiency",
+  },
+  {
+    role: "Design Engineer",
+    experience: "Min. 1yr in HVAC field",
+    description: "HVAC drawing & Design for chiller",
+    skills: "AUTOCAD Proficiency",
+  },
+  {
+    role: "Design Engineer",
+    experience: "Min. 1yr in HVAC field",
+    description: "HVAC drawing & Design for chiller",
+    skills: "AUTOCAD Proficiency",
+  },
+];
+
+export const contactText = [
   {
     office: "KOLKATA HEAD OFFICE",
     address:
-      "H.O. UNIVERSAL HOUSE, JAGORDANGA RAJARHAT MAIN ROAD, KOLKATA - 700136 (W.B.) INDIA",
+      "H.O. UNIVERSAL HOUSE, JAGORDANGA RAJARHAT MAIN ROAD, KOLKATA - 700136, WEST BENGAL",
+    w: "510px",
   },
   {
     office: "KOLKATA REGISTERED OFFICE",
     address:
-      "PRINCEP ST, CHOWRINGHEE NORTH, BOU BAZAAR KOLKATA, WEST BENGAL 700072",
+      "P-41, PRINCEP ST, 6th FLOOR, DHARMATALA, KOLKATA - 700072, WEST BENGAL",
+    w: "510px",
   },
-];
-
-export const contacttextb = [
   {
     office: "GUWAHATI BRANCH",
     address:
-      "FLAT - GA, PHASE -1, PUBALI HOUSING COMPLEX LACHIT NAGAR, GUWAHATI- 781007, ASSAM",
+      "FLAT - GA, PHASE -1, PUBALI HOUSING COMPLEX LACHIT NAGAR, GUWAHATI - 781007, ASSAM",
     group: "UNIVERSAL SALES & PROJECTS",
+    w: "200px",
   },
   {
     office: "PATNA BRANCH",
     address:
-      "VAISHALI MARKET, 1ST FLOOR, ROOM NO.103, KARBIGAHIA MAIN ROAD, PATNA, BIHAR- 800001",
+      "VAISHALI MARKET, 1ST FLOOR, ROOM NO.103, KARBIGAHIA MAIN ROAD, PATNA - 800001, BIHAR",
     group: "UNIVERSAL ENERGY SOLUTIONS PVT LTD",
+    w: "200px",
   },
   {
     office: "RANCHI BRANCH",
-    address: "12, BIT-STEP MESRA, RANCHI-835215",
+    address: "12, BIT-STEP MESRA, RANCHI - 835215, JHARKHAND",
     group: "UNIVERSAL ENERGY SOLUTIONS PVT LTD",
+    w: "200px",
   },
   {
     office: "BHUBANESWAR BRANCH",
-    address: "PLOT NO.147, BUDHESWARI P.O. LANE, KHURDA-751006, ODISHA",
+    address: "PLOT NO.147, BUDHESWARI P.O. LANE, KHURDA - 751006, ODISHA",
     group: "UNIVERSAL ENERGY SOLUTIONS PVT LTD",
+    w: "200px",
   },
 ];
 
-export const universalTeam = {
-  p: "UNIVERSAL is a happy group with absolutely no discrimination based on class, creed, religion, gender, what-so-ever. The happy photograph of our Annual Motivation Tour is a testimony to this cohesiveness.",
-};
+export const bodyTextIntro = [
+  {
+    name: "Industrial",
+    value:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sunt corrupti labore, explicabo dolore hic eos odit deleniti obcaecati dolorum animi a quia ducimus minus iure.",
+    icon: "h",
+  },
+  {
+    name: "Commercial",
+    value:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sunt corrupti labore, explicabo dolore hic eos odit deleniti obcaecati dolorum animi a quia ducimus minus iure.",
+    icon: "t",
+    color: "blue",
+  },
+  {
+    name: "Residential",
+    value:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sunt corrupti labore, explicabo dolore hic eos odit deleniti obcaecati dolorum animi a quia ducimus minus iure.",
+    icon: "b",
+  },
+];
+
+export const bodyWelcomeText = [
+  "Universal Group, comprising of three companies - Universal Sales, Universal Sales & Projects, Universal Energy Solutions is a leading HVAC solution providing company in Eastern India, having core strength of engineering in all types of Air-Conditioning Solutions from design to execution and even maintenance of all types of air-conditioning plants in various types of applications.",
+
+  "The Company's expertise in project engineering contract jobs of HVAC, electrical, kitchen ventilation with Equipment & revamping of all above, Cold rooms & Storage System as well as BMS system makes this a trustworthy brand to bank upon for providing state-of-the-art engineering solutions.",
+];
+
+export const bodyTextCard = [
+  {
+    key: "conditioning",
+    title: "Air-Conditioning",
+    value:
+      "We are authorized Sales and Service Dealers of Daikin And Hitachi, serving Eastern India with energy-efficient solutions for the building sector. Specializing in air-conditioning for Hotels, Shopping Malls, Schools, Universities, Hospitals, and Residential ...",
+  },
+  {
+    key: "ventilation",
+    title: "Ventilation",
+    value:
+      "With the rise of Multi-Storey buildings and ever increasing cost of space, mostly all commercial buildings have multi-layer basement and being used for car-park. Therefore the rise of ventilation systems in the market to handle adverse scenarios of Fire as ...",
+  },
+  {
+    key: "fire",
+    title: "Fire",
+    value:
+      "Universal Group delivers industrial fire protection systems since inception, focusing on high-value life safety solutions for buildings, applications, and hazards. Our aim is to ensure customer productivity and safety by maintaining safety and production ...",
+  },
+  {
+    key: "power",
+    title: "Power",
+    value:
+      "Universal Energy Solutions provides Power Management consultancy services to a diversified customer base. We are in the Energy Sector for more than two decades. Power management is a unique concept, wherein we provide consultancy services ...",
+  },
+];
+
