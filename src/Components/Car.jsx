@@ -1,23 +1,20 @@
+import PropTypes from "prop-types";
 import { Carousel } from "@mantine/carousel";
 
-const Car = () => {
-  const images = [
-    "src\\assets\\Universal_House.jpg",
-    "src\\assets\\Universal_House.jpg",
-    "src\\assets\\Universal_House.jpg",
-  ];
+const Car = ({ h, images, size }) => {
   return (
-      <Carousel
-        align="start"
-        slideGap="xs"
-        withControls={false}
-        withIndicators
-        className="h-screen w-full"
-      >
-        {images.map((image, index) => (
-          <img key={index} src={image} alt={`Slide ${index + 1}`} className="h-screen w-full object-cover -z-10"/>
-        ))}
-      </Carousel>
+    <Carousel align="start" slideGap="xs" withIndicators loop slideSize={size}>
+      {images.map((image, index) => (
+        <img key={index} src={image} className={`h-${h} object-cover`} />
+      ))}
+    </Carousel>
   );
 };
+
+Car.propTypes = {
+  h: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  images: PropTypes.array.isRequired,
+};
+
 export default Car;

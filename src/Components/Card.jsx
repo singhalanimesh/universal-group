@@ -13,7 +13,7 @@ const Card = ({ keyProp, h, text, title }) => {
 Card.propTypes = {
   h: PropTypes.string.isRequired,
   keyProp: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 

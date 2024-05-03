@@ -1,4 +1,5 @@
 import ReactDOM from "react-dom/client";
+import { lazy, Suspense } from "react";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
@@ -10,10 +11,14 @@ import About from "./Components/About";
 import Services from "./Components/Services";
 import Career from "./Components/Career";
 import Contact from "./Components/Contact";
-import CurrentPortfolio from "./Components/CurrentPortfolio";
-import CompletedPortfolio from "./Components/CompletedPortfolio";
 import Awards from "./Components/Awards";
 import UniversalTeam from "./Components/UniversalTeam";
+import Footer from "./Components/Footer";
+
+const CurrentPortfolio = lazy(() => import("./Components/CurrentPortfolio"));
+const CompletedPortfolio = lazy(() =>
+  import("./Components/CompletedPortfolio")
+);
 
 const AppLayout = () => {
   return (
@@ -21,6 +26,7 @@ const AppLayout = () => {
       <div className="app">
         <Header />
         <Outlet />
+        <Footer />
       </div>
     </MantineProvider>
   );
@@ -53,11 +59,24 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/completed-projects",
-        element: <CompletedPortfolio />,
+        element: (
+          <Suspense
+            fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
+          >
+            <CompletedPortfolio />,
+          </Suspense>
+        ),
       },
       {
         path: "/current-projects",
-        element: <CurrentPortfolio />,
+
+        element: (
+          <Suspense
+            fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
+          >
+            <CurrentPortfolio />,
+          </Suspense>
+        ),
       },
       {
         path: "/awards-and-achievements",

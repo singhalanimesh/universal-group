@@ -131,7 +131,7 @@ export const portfolioTextCard = [
     location: "GUWAHATI",
     tr: "776HP VRV",
     type: "COMMERCIAL",
-    id: "kar-bhawan",
+    id: "kar-bhavan",
   },
   {
     name: "PS ABACUS",
@@ -166,7 +166,7 @@ export const portfolioTextCard = [
     location: "BARASAT",
     tr: "450HP VRV",
     type: "SCHOOLS",
-    id: "adamas-universty",
+    id: "adamas-university",
   },
   {
     name: "IIT PATNA",
@@ -306,20 +306,20 @@ export const portfolioTextMilestone = [
     type: "MILESTONE",
     id: "urja",
   },
-  {
-    name: "HIGH COURT",
-    location: "GUWAHATI",
-    tr: "600HP VRV",
-    type: "MILESTONE",
-    id: "high-court",
-  },
-  {
-    name: "RAJ BHAVAN",
-    location: "GUWAHATI",
-    tr: "200HP VRV",
-    type: "MILESTONE",
-    id: "raj-bhavan",
-  },
+  // {
+  //   name: "HIGH COURT",
+  //   location: "GUWAHATI",
+  //   tr: "600HP VRV",
+  //   type: "MILESTONE",
+  //   id: "high-court",
+  // },
+  // {
+  //   name: "RAJ BHAVAN",
+  //   location: "GUWAHATI",
+  //   tr: "200HP VRV",
+  //   type: "MILESTONE",
+  //   id: "raj-bhavan",
+  // },
 ];
 
 export const portfolioTextCurrent = [
@@ -363,7 +363,7 @@ export const portfolioTextCurrent = [
     location: "SREERMPUR",
     tr: "1650HP VRV",
     type: "MALL",
-    id: "  triveni-mall",
+    id: "triveni-mall",
   },
   //   {
   //     name: "OZONE PLATINUM MALL",

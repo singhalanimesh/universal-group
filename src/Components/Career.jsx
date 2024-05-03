@@ -19,8 +19,8 @@ const Career = () => {
             className="w-[600px]"
           /></div>
 
-          <div className="text-justify ">
-            <div className="my-4 text-3xl font-semibold text-[#003866] w-[444px]">
+          <div className="text-justify w-[490px]">
+            <div className="my-4 text-3xl font-semibold text-[#003866]">
               Current Openings
             </div>
             {careerText.map(

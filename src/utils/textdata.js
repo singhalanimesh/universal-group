@@ -183,25 +183,45 @@ export const bodyTextCard = [
     key: "conditioning",
     title: "Air-Conditioning",
     value:
-      "We are authorized Sales and Service Dealers of Daikin And Hitachi, serving Eastern India with energy-efficient solutions for the building sector. Specializing in air-conditioning for Hotels, Shopping Malls, Schools, Universities, Hospitals, and Residential ...",
+      "We are authorized Sales and Service Dealers of Daikin And Hitachi, serving Eastern India with energy-efficient solutions for the building sector. Specializing in air-conditioning for Hotels, Shopping Malls, Schools, Universities, Hospitals, and Residential & Com ...",
   },
   {
     key: "ventilation",
     title: "Ventilation",
     value:
-      "With the rise of Multi-Storey buildings and ever increasing cost of space, mostly all commercial buildings have multi-layer basement and being used for car-park. Therefore the rise of ventilation systems in the market to handle adverse scenarios of Fire as ...",
+      "With the rise of Multi-Storey buildings and ever increasing cost of space, mostly all commercial buildings have multi-layer basement and being used for car-park. Therefore the rise of ventilation systems in the market to handle adverse scenarios of Fire as  well. We spec...",
   },
   {
     key: "fire",
     title: "Fire",
     value:
-      "Universal Group delivers industrial fire protection systems since inception, focusing on high-value life safety solutions for buildings, applications, and hazards. Our aim is to ensure customer productivity and safety by maintaining safety and production ...",
+      "Universal Group delivers industrial fire protection systems since inception, focusing on high-value life safety solutions for buildings, applications, and hazards. Our aim is to ensure customer productivity and safety by maintaining safety and production efficiency...",
   },
   {
     key: "power",
     title: "Power",
     value:
-      "Universal Energy Solutions provides Power Management consultancy services to a diversified customer base. We are in the Energy Sector for more than two decades. Power management is a unique concept, wherein we provide consultancy services ...",
+      "Universal Energy Solutions provides Power Management consultancy services to a diversified customer base. We are in the Energy Sector for more than two decades. Power management is a unique concept, wherein we provide consultancy services to big infra...",
   },
 ];
 
+export const footerDataP = [
+  "Universal Group Started in 1996 in Kolkata primarily as a Sales dealer for AMTREXHITACHI Room Air conditioners. Begun in a small room in the business district of Kolkata as dealer in HITACHI WAC, adding other products like SAC and Ductable as and when HITACHI introduced them.",
+];
+
+export const footerData = [
+  {
+    office: "COPRORATE OFFICE",
+    address:
+      "H.O. UNIVERSAL HOUSE, JAGORDANGA RAJARHAT MAIN ROAD, KOLKATA - 700136, WEST BENGAL",
+    phone: "8697707447",
+    email: "info@universalgroupindia.org",
+  },
+  {
+    office: "REGISTERED OFFICE",
+    address:
+      "P-41, PRINCEP ST, 6th FLOOR, DHARMATALA, KOLKATA - 700072, WEST BENGAL",
+    phone: "9073372942",
+    email: "",
+  },
+];

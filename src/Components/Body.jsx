@@ -1,12 +1,9 @@
-import { HiCog } from "react-icons/hi2";
-import { TbAirConditioning } from "react-icons/tb";
-import { BiHappyBeaming } from "react-icons/bi";
-
-import { bodyTextIntro, universalTeam } from "../utils/textData";
-import Car from "./Car";
+import { universalTeam } from "../utils/textData";
 import { Link } from "react-router-dom";
 import BodyPart1 from "./BodyPart1";
 import BodyPart2 from "./BodyPart2";
+import BodyBackground from "./BodyBackground";
+import Clientele from "./Clientele";
 
 const Body = () => {
   const handleLink = () => {
@@ -15,33 +12,15 @@ const Body = () => {
 
   return (
     <div>
-      <Car />
-
-      <div className="bg-[#18d26e] ">
-        <div className="m-auto w-[1110px] flex">
-          {bodyTextIntro.map(({ name, value, icon, color }, index) => (
-            <div
-              key={index}
-              className={`w-1/3 p-8 h-[288px] ${color ? "bg-[#003866]" : ""}`}
-            >
-              {icon == "h" ? (
-                <HiCog size="60" color="white" />
-              ) : icon == "t" ? (
-                <TbAirConditioning size="60" color="white" />
-              ) : (
-                <BiHappyBeaming size="60" color="white" />
-              )}
-              <h4 className="my-4 text-lg text-white">{name}</h4>
-              <p className="text-white">{value}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      <BodyBackground />
 
       <BodyPart1 />
+
       <BodyPart2 />
 
-      <div className="bg-white my-8 ">
+      <Clientele />
+
+      <div className="bg-[#e3f5f8] p-8 pb-12">
         <div className="m-auto w-[1110px] text-center flex-col align-middle">
           <h1 className="w-4/12 mx-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e]">
             UNIVERSAL TEAM
@@ -50,11 +29,11 @@ const Body = () => {
           <div className="flex justify-around py-8">
             <img
               src="src\assets\motivation-tour-1.jpeg"
-              className="mx-auto w-[520px]"
+              className="mx-auto w-[520px] rounded-md"
             />
             <img
               src="src\assets\motivation-tour-2.jpeg"
-              className="mx-auto w-[520px]"
+              className="mx-auto w-[520px] rounded-md"
             />
           </div>
           <Link
