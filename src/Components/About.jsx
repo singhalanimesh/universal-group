@@ -5,27 +5,27 @@ import {
   aboutTextCompany,
 } from "../utils/textData";
 import Card from "./Card";
+import ScrollTopButton from "./ScrollTopButton";
 
 const About = () => {
   return (
     <div>
-      <div className="bg-[#e3f5f8] pt-28 pb-8">
-        <div className="m-auto w-[1110px] flex-col align-middle text-center">
+      <div className="bg-[#e3f5f8] pt-28 p-8">
+        <div className="m-auto flex-col align-middle text-center xl:w-[1110px]">
           <div>
-            <h1 className="w-2/12 m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e]">
+            <h1 className="m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e] md:w-3/12">
               ABOUT US
             </h1>
-            <p className="mb-8 pb-7 text-[15px]">
-              {aboutText["p1"]}
-            </p>
-            <p className="mb-8 pb-7 text-[15px]">
-              {aboutText["p2"]}
-            </p>
+            <p className="mb-8 pb-7 text-[15px]">{aboutText.p1}</p>
+            <p className="mb-8 pb-7 text-[15px]">{aboutText.p2}</p>
           </div>
 
-          <div className="flex">
+          <div className="flex flex-wrap">
             {aboutTextCard.map(({ key, value, title }, index) => (
-              <div key={index} className="w-[30%] mx-auto my-4 h-[476px]">
+              <div
+                key={index}
+                className="w-[60%] mx-auto my-4 h-[476px] md:w-[50.1%] lg:w-[30%]"
+              >
                 <Card keyProp={key} h="476px" text={value} title={title} />
               </div>
             ))}
@@ -33,48 +33,40 @@ const About = () => {
         </div>
       </div>
 
-      <div className="pt-12">
-        <div className="m-auto w-[1110px] flex-col align-middle text-gray-600 text-center">
+      <div className="pt-12 px-8">
+        <div className="m-auto flex-col align-middle text-gray-600 text-center xl:w-[1110px] ">
           <div>
-            <h1 className="w-7/12 m-auto mb-8 text-[22px] font-bold border-b-[3px] border-[#18d26e]">
+            <h1 className="m-auto mb-8 text-[22px] font-bold border-b-[3px] border-[#18d26e] lg:w-7/12 ">
               UNIVERSAL OFFERS SOLUTIONS FOR YOUR BUILDINGS
             </h1>
-            <p className="mb-8 pb-7 px-12 text-[15px]">
-              {aboutText["p3"]}
-            </p>
+            <p className="mb-8 pb-7 px-12 text-[15px]">{aboutText.p3}</p>
           </div>
 
-          <div className="my-4 flex">
-            <div className="w-2/4 px-4">
+          <div className="my-4 justify-center flex flex-wrap">
+            <div className="w-[450px] px-4 md:w-2/4 ">
               {aboutTextService.map((index) => (
-                <div
-                  key={index}
-                  className="my-[7.5px] p-[6px] pl-8 bg-gray-200 text-sm"
-                >
+                <div key={index} className="mb-[7.5px] p-2 bg-gray-200 text-sm">
                   {index}
                 </div>
               ))}
             </div>
-            <div className="w-2/4 px-4">
+            <div className="w-[450px] px-4 md:w-2/4">
               <img src="src\assets\universal_about.jpg" alt="" />
             </div>
           </div>
 
           <div>
-            <h1 className="w-5/12 mx-auto my-8 pt-4 text-[22px] font-bold border-b-[3px] border-[#18d26e]">
+            <h1 className="mx-auto my-8 pt-4 text-[22px] font-bold border-b-[3px] border-[#18d26e] lg:w-5/12">
               UNIVERSAL GROUP COMPRISES OF
             </h1>
-            <p className="text-center mb-8 pb-7 text-[15px]">
-              Universal Group now boasts a team of 250 highly skilled and
-              efficient staff members
-            </p>
+            <p className="text-center mb-8 pb-7 text-[15px]">{aboutText.p4}</p>
           </div>
 
-          <div className="my-4 flex">
-            <div className="w-2/4 px-4">
+          <div className="my-4 justify-center flex flex-wrap">
+            <div className="w-96 px-4 md:w-2/4 ">
               <img src="src\assets\universal_group.png" alt="" />
             </div>
-            <div className="w-2/5 px-4 m-auto">
+            <div className="w-[324px] px-4 m-auto md:w-2/5">
               {aboutTextCompany.map(({ key, value }, index) => (
                 <div key={index} className="my-4 text-center text-lg">
                   <strong>{key}</strong>
@@ -86,6 +78,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <ScrollTopButton />
     </div>
   );
 };

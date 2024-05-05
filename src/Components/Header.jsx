@@ -1,24 +1,10 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import Dropdown from "./Dropdown";
+import useScroll from "../utils/useScroll";
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const threshold = 28;
-      setIsScrolled(scrollTop > threshold);
-    };
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const isScrolled = useScroll(28);
 
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -52,7 +38,10 @@ const Header = () => {
             title={"ABOUT"}
             links={["about-us", "awards-and-achievements", "universal-team"]}
           />
-          <Dropdown title={"PORTFOLIO"} links={["current-projects","completed-projects"]} />
+          <Dropdown
+            title={"PORTFOLIO"}
+            links={["current-projects", "completed-projects"]}
+          />
           {/* <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
             EVENTS
           </div> */}

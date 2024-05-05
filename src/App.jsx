@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
@@ -91,4 +91,4 @@ const appRouter = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={appRouter} />);
+root.render(<React.StrictMode><RouterProvider router={appRouter} /></React.StrictMode>);

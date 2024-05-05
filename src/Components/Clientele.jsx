@@ -1,4 +1,3 @@
-// import { Carousel } from "@mantine/carousel";
 import Car from "./Car";
 
 const Clientele = () => {
@@ -15,9 +14,9 @@ const Clientele = () => {
   ];
 
   return (
-    <div className="pb-8">
-      <div className="m-auto w-[1110px] flex-col align-middle text-center">
-        <h1 className="w-3/12 m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e]">
+    <div className="p-8 pt-0">
+      <div className="m-auto flex-col align-middle text-center xl:w-[1110px]">
+        <h1 className="m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e] lg:w-3/12">
           OUR CLIENTELE
         </h1>
         <Car h={"[30px] m-4"} images={images} />

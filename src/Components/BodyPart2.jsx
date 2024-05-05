@@ -10,26 +10,32 @@ const BodyPart2 = () => {
 
   return (
     <div>
-      <div className="bg-white my-8">
-        <div className="m-auto w-[1110px] text-center flex-col align-middle">
-          <h1 className="w-7/12 mx-auto mb-8 text-3xl font-bold border-b-[3px] border-[#18d26e]">
+      <div className="bg-white my-8 px-8">
+        <div className="m-auto text-center flex-col align-middle xl:w-[1110px] ">
+          <h1 className="mx-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e] lg:w-8/12">
             AUTHORIZED CHANNEL PARTNERS OF
           </h1>
           <div className="flex justify-around">
-            <img src="src\assets\Daikin.png" alt="" className="m-auto" />
-            <img src="src\assets\Hitachi.png" alt="" className="m-auto" />
+            <img
+              src="src\assets\Daikin.png"
+              className="m-auto h-32 sm:h-full"
+            />
+            <img
+              src="src\assets\Hitachi.png"
+              className="m-auto h-32 sm:h-full"
+            />
           </div>
         </div>
       </div>
 
       <div className="bg-[#e3f5f8] my-8 p-8">
-        <div className="m-auto w-[1110px] text-center flex-col align-middle">
-          <h1 className="w-3/12 mx-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e]">
+        <div className="m-auto text-center flex-col align-middle xl:w-[1110px]">
+          <h1 className="mx-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e] lg:w-3/12">
             OUR PORTFOLIO
           </h1>
           <div className="flex flex-wrap pb-8">
             {portfolioTextMilestone.map(({ name, location, tr, id }, index) => (
-              <div key={index} className="m-auto w-[45%]">
+              <div key={index} className="m-auto lg:w-[31%]">
                 <PortfolioCard
                   name={name}
                   location={location}
@@ -42,7 +48,7 @@ const BodyPart2 = () => {
           <Link
             to="/portfolio"
             onClick={handleLink}
-            className="p-4 rounded-full text-white bg-[#18d26e] "
+            className="p-4 rounded-full text-white bg-[#18d26e] hover:bg-[#13a456]"
           >
             SEE ALL
           </Link>

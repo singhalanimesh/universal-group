@@ -1,6 +1,7 @@
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
 import { footerData, footerDataP } from "../utils/textData";
 
 const Footer = () => {
@@ -12,9 +13,7 @@ const Footer = () => {
             <h1 className="pl-3 mb-4 border-l-[#18d26e] border-l-4 font-bold text-4xl tracking-[0.2em] ">
               UNIVERSAL GROUP
             </h1>
-            <p className="text-justify">
-            {footerDataP[0]}
-            </p>
+            <p className="text-justify">{footerDataP[0]}</p>
             <div className="flex pt-4">
               <Link
                 to="https://www.facebook.com/WeAreUniversalGroup"
@@ -40,7 +39,7 @@ const Footer = () => {
               </h4>
               <p>{value.address}</p>
               <p>
-                <strong>Phone</strong>: {value.phone}
+                <strong>Phone</strong> : {value.phone}
               </p>
               {value.email && (
                 <p>

@@ -1,5 +1,6 @@
 import { portfolioTextCurrent } from "../utils/portfolioData";
 import PortfolioCard from "./PortfolioCard";
+import ScrollTopButton from "./ScrollTopButton";
 
 const CurrentPortfolio = () => {
   return (
@@ -22,6 +23,7 @@ const CurrentPortfolio = () => {
           ))}
         </div>
       </div>
+      <ScrollTopButton />
     </div>
   );
 };

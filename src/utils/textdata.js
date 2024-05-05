@@ -4,6 +4,8 @@ export const aboutText = {
   p2: "To Cater market demand and with increased activities, we started a company Universal Sales & Projects in 2003 & Universal Energy Solutions Pvt. Ltd. to specially expertise in project engineering contract jobs of HVAC, electrical, kitchen ventilation with Equipment & revamping of all above, Cold rooms & Storage System as well as BMS system.",
 
   p3: "Universal pioneered the use of TES (Thermal Energy Storage Technology) in Eastern India. In combination on and independently, depending upon which option will be the most cost-effective solution for our valuable clients.",
+
+  p4: "Universal Group now boasts a team of 250 highly skilled and efficient staff members",
 };
 
 export const aboutTextCard = [
@@ -17,13 +19,13 @@ export const aboutTextCard = [
     key: "strength",
     title: "UNIVERSAL STRENGTH",
     value:
-      "Team Work- Together Everyone Achieves More. Our team of qualified and hard-working Sales Executives, Engineers, Designers, Project Managers and Service Technicians strive to deliver quality work in the committed timeline to achieve Customer Satisfaction",
+      "Together Everyone Achieves More. Our team of qualified and hard-working Sales Executives, Engineers, Designers, Project Managers and Service Technicians strive to deliver quality work in the committed timeline to achieve Customer Satisfaction",
   },
   {
     key: "mission",
-    title: "UNIVERSAL MISSION VISION COMMITTMENT",
+    title: "MISSION VISION COMMITTMENT",
     value:
-      "Our aspiration is to maximize employment opportunities, empowering our youth to pursue their dreams through integrity and diligence. Each member aims for improved quality of life, aspiring to excel in HVAC and uphold citizenship values",
+      "Our aspiration is to maximize employment opportunities, empowering our youth to pursue their dreams through integrity and diligence. Each member aims for improved quality of life, aspiring to excel in HVAC and uphold values",
   },
 ];
 
@@ -45,6 +47,29 @@ export const aboutTextCompany = [
     key: "Universal Sales & Projects",
     value: "HVAC solutions for Cotext-center",
   },
+];
+
+export const awardsCard = [
+  {
+    key: "all-india-highest-vrv-sales",
+    title: "UNIVERSAL Wins Daikin All India Highest VRV Sales Award FY 2022-23",
+  },
+  {
+    key: "awards",
+    title:
+      "Awards Received for Highest VRV Sales in East, West Bengal and All India",
+  },
+  {
+    key: "ps-certificate",
+    title: "Honoured to Recieve the PS Excellence Awards",
+  },
+];
+
+export const universalTeamCard = [
+  { key: "universal-team1", title: "" },
+  { key: "universal-team2", title: "" },
+  { key: "universal-team3", title: "" },
+  { key: "universal-team4", title: "" },
 ];
 
 export const universalTeam = {
@@ -82,6 +107,11 @@ export const serviceTextCard = [
   },
 ];
 
+export const careerP = {
+  p: "Interested Candidates can register interest for any current job openings in the given email with an attached CV and Role Mentioned in the subject.",
+  e: "Email: universal.energysolutions@gmail.com",
+};
+
 export const careerText = [
   {
     role: "Design Engineer",
@@ -90,22 +120,22 @@ export const careerText = [
     skills: "AUTOCAD Proficiency",
   },
   {
-    role: "Design Engineer",
+    role: "Sales Engineer",
     experience: "Min. 1yr in HVAC field",
-    description: "HVAC drawing & Design for chiller",
-    skills: "AUTOCAD Proficiency",
+    description: "Basic HVAC Knowledge",
+    skills: "MS Excel, AUTOCAD",
   },
   {
-    role: "Design Engineer",
-    experience: "Min. 1yr in HVAC field",
-    description: "HVAC drawing & Design for chiller",
-    skills: "AUTOCAD Proficiency",
+    role: "Service Engineer",
+    experience: "Fresher",
+    description: "ITI Pass out",
+    skills: "Basic Knowledge of AC Working",
   },
   {
-    role: "Design Engineer",
-    experience: "Min. 1yr in HVAC field",
-    description: "HVAC drawing & Design for chiller",
-    skills: "AUTOCAD Proficiency",
+    role: "Project Engineer",
+    experience: "Fresher, Diploma or B.Tech",
+    description: "Basic HVAC Knowlege and Thermodynamics",
+    skills: "AUTOCAD and MS Excel",
   },
 ];
 
@@ -152,22 +182,22 @@ export const contactText = [
 
 export const bodyTextIntro = [
   {
-    name: "Industrial",
+    name: "Hospitals",
     value:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sunt corrupti labore, explicabo dolore hic eos odit deleniti obcaecati dolorum animi a quia ducimus minus iure.",
+      "Universal specialises in Design and Execution of HVAC System for entire Hospitals with efficient and cost effective solutions",
     icon: "h",
   },
   {
     name: "Commercial",
     value:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sunt corrupti labore, explicabo dolore hic eos odit deleniti obcaecati dolorum animi a quia ducimus minus iure.",
+      "We Provide Energy-Efficient Systems For Every Commercial Building demanding a system with aesthetics as well as comfort",
     icon: "t",
     color: "blue",
   },
   {
     name: "Residential",
     value:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sunt corrupti labore, explicabo dolore hic eos odit deleniti obcaecati dolorum animi a quia ducimus minus iure.",
+      "A home that connects and gives comforts all with an AC system that saves electricity cost and we have a solution for all",
     icon: "b",
   },
 ];
@@ -206,7 +236,7 @@ export const bodyTextCard = [
 ];
 
 export const footerDataP = [
-  "Universal Group Started in 1996 in Kolkata primarily as a Sales dealer for AMTREXHITACHI Room Air conditioners. Begun in a small room in the business district of Kolkata as dealer in HITACHI WAC, adding other products like SAC and Ductable as and when HITACHI introduced them.",
+  "We are an HVAC Solutions Company providing latest technologies and energy efficient solutions in entire East Zone for all applications over past three decades",
 ];
 
 export const footerData = [
@@ -215,13 +245,13 @@ export const footerData = [
     address:
       "H.O. UNIVERSAL HOUSE, JAGORDANGA RAJARHAT MAIN ROAD, KOLKATA - 700136, WEST BENGAL",
     phone: "8697707447",
-    email: "info@universalgroupindia.org",
+    email: "universal.energysolutions@gmail.com",
   },
   {
     office: "REGISTERED OFFICE",
     address:
       "P-41, PRINCEP ST, 6th FLOOR, DHARMATALA, KOLKATA - 700072, WEST BENGAL",
-    phone: "9073372942",
-    email: "",
+    phone: "8697707457",
+    email: "universal.energysolutions@gmail.com",
   },
 ];

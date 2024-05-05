@@ -1,24 +1,25 @@
-import { careerText } from "../utils/textData";
+import { careerP, careerText } from "../utils/textData";
 
 const Career = () => {
   return (
-    <div className="bg-[#e3f5f8] pt-28">
-      <div className="m-auto w-[1110px] text-center flex-col align-middle">
-        <h1 className="w-2/12 m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e]">
-          CAREER
-        </h1>
-        <p className="pb-4 font-semibold">Build Your Career With Us.</p>
-        <p className="mb-8 pb-7 font-semibold">
-          Interested Candidates can register interest for any current job
-          openings in the given email with an attached CV and Role Mentioned in
-          the subject. <br /> Email: info@universalgroupindia.org
-        </p>
-        <div className="flex justify-between align-top">
-          <div><img
-            src="src/assets/career.png"
-            className="w-[600px]"
-          /></div>
+    <div className="bg-[#e3f5f8] pt-28 px-8">
+      <div className="m-auto text-center flex-col align-middle xl:w-[1110px]">
+        <div className="font-semibold">
+          <h1 className="m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e] sm:w-2/12 ">
+            CAREER
+          </h1>
+          <p className="pb-4">Build Your Career With Us.</p>
+          <p> {careerP.p}</p>
+          <p className="mb-8 pb-7">{careerP.e}</p>
+        </div>
 
+        <div className="flex flex-wrap justify-center align-top xl:justify-between">
+          <div>
+            <img
+              src="src/assets/career.png"
+              className="w-[490px] xl:w-[600px]"
+            />
+          </div>
           <div className="text-justify w-[490px]">
             <div className="my-4 text-3xl font-semibold text-[#003866]">
               Current Openings

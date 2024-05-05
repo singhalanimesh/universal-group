@@ -306,6 +306,13 @@ export const portfolioTextMilestone = [
     type: "MILESTONE",
     id: "urja",
   },
+  {
+    name: "MEDIASITI",
+    location: "SALT LAKE",
+    tr: "1500TR CHILLER",
+    type: "COMMERCIAL",
+    id: "mediasiti",
+  },
   // {
   //   name: "HIGH COURT",
   //   location: "GUWAHATI",
@@ -451,7 +458,7 @@ export const portfolioTextCurrent = [
   //   },
   //   {
   //     name: "SABYASACHI",
-  //     location: "ACTIVE CARE",
+  //     location: "ACTIVE ACRES",
   //     tr: "00HP VRV",
   //     type: "FACTORY",
   //     id: "sabyasachi",
