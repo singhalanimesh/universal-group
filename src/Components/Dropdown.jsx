@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-const Dropdown = ({ title, links }) => {
+const Dropdown = ({ title, links, menu }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openToggle = () => {
@@ -44,7 +44,7 @@ const Dropdown = ({ title, links }) => {
                 key={index}
                 to={`/${value}`}
                 onClick={() => {
-                  closeToggle(), handleClick();
+                  closeToggle(), handleClick(), menu();
                 }}
                 className="block px-4 py-2 text-[#003866] hover:text-[#18d26e]"
               >
@@ -66,6 +66,7 @@ const Dropdown = ({ title, links }) => {
 Dropdown.propTypes = {
   title: PropTypes.string.isRequired,
   links: PropTypes.array.isRequired,
+  menu: PropTypes.func,
 };
 
 export default Dropdown;

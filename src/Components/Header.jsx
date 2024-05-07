@@ -1,13 +1,23 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { LuMenu } from "react-icons/lu";
 
 import Dropdown from "./Dropdown";
 import useScroll from "../utils/useScroll";
+import useWidth from "../utils/useWidth";
 
-const Header = () => {
+const Header1 = () => {
   const isScrolled = useScroll(28);
+  const currentWidth = useWidth();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    if (currentWidth > 640) setIsMenuOpen(false);
   };
 
   return (
@@ -16,60 +26,87 @@ const Header = () => {
         isScrolled ? "bg-white shadow-md" : "bg-transparent py-4"
       }`}
     >
-      <div className="py-8 h-20 flex justify-between bg-transparent">
-        <div className="pl-16">
+      <div className="mt-4 h-20 flex justify-between pb-16 sm:pt-8 lg:pb-8 sm:mt-0">
+        <div className="pl-4 sm:pl-12">
           <Link
             to="/"
-            className="fixed pl-3 -mt-1 text-[#003866] border-l-[#18d26e] border-l-4 font-bold text-2xl tracking-[0.2em]"
+            className="fixed pl-3 -mt-1 text-[#003866] border-l-[#18d26e] border-l-4 font-bold text-2xl tracking-[0.2em] w-12 sm:w-96"
             onClick={handleClick}
           >
             UNIVERSAL GROUP
           </Link>
         </div>
-        <div className="flex pr-16">
-          <Link
-            to="/"
-            className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
-            onClick={handleClick}
+
+        <div>
+          <div className={`sm:hidden px-4 pl-20`} onClick={toggleMenu}>
+            <LuMenu size={35} />
+          </div>
+
+          <div
+            className={`${
+              isMenuOpen || currentWidth > 640 ? " " : "hidden"
+            } bg-white sm:bg-transparent mt-0 flex flex-col sm:flex-row sm:my-8 lg:mt-0 lg:pr-16 `}
           >
-            HOME
-          </Link>
-          <Dropdown
-            title={"ABOUT"}
-            links={["about-us", "awards-and-achievements", "universal-team"]}
-          />
-          <Dropdown
-            title={"PORTFOLIO"}
-            links={["current-projects", "completed-projects"]}
-          />
-          {/* <div className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
+            <Link
+              to="/"
+              onClick={() => {
+                toggleMenu(), handleClick();
+              }}
+              className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+            >
+              HOME
+            </Link>
+
+            <Dropdown
+              title="ABOUT"
+              links={["about-us", "awards-and-achievements", "universal-team"]}
+              menu={toggleMenu}
+            />
+
+            <Dropdown
+              title="PORTFOLIO"
+              links={["current-projects", "completed-projects"]}
+              menu={toggleMenu}
+            />
+
+            {/* <Link to="/events" onClick={toggleMenu} className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
             EVENTS
-          </div> */}
-          <Link
-            to="/services"
-            className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
-            onClick={handleClick}
-          >
-            SERVICES
-          </Link>
-          <Link
-            to="/career"
-            className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
-            onClick={handleClick}
-          >
-            CAREER
-          </Link>
-          <Link
-            to="/contact"
-            className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
-            onClick={handleClick}
-          >
-            CONTACT US
-          </Link>
+          </Link> */}
+
+            <Link
+              to="/services"
+              onClick={() => {
+                toggleMenu(), handleClick();
+              }}
+              className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+            >
+              SERVICES
+            </Link>
+
+            <Link
+              to="/career"
+              onClick={() => {
+                toggleMenu(), handleClick();
+              }}
+              className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+            >
+              CAREER
+            </Link>
+
+            <Link
+              to="/contact"
+              onClick={() => {
+                toggleMenu(), handleClick();
+              }}
+              className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+            >
+              CONTACT US
+            </Link>
+          </div>
         </div>
       </div>
     </header>
   );
 };
 
-export default Header;
+export default Header1;

@@ -14,7 +14,7 @@ const Awards = () => {
         </p>
         <div className="flex flex-wrap">
           {awardsCard.map(({ key, title }, index) => (
-            <div key={index} className="mx-auto my-4 lg:h-[408px] sm:w-[45%] ">
+            <div key={index} className="mx-auto my-4 lg:h-[408px] sm:w-[450px] ">
               <Card keyProp={key} h="408px" title={title} />
             </div>
           ))}

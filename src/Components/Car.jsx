@@ -13,7 +13,7 @@ const Car = ({ h, images, size }) => {
 
 Car.propTypes = {
   h: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
+  size: PropTypes.string,
   images: PropTypes.array.isRequired,
 };
 
