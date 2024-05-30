@@ -3,7 +3,7 @@ import { Carousel } from "@mantine/carousel";
 
 const Car = ({ h, images, size }) => {
   return (
-    <Carousel align="start" slideGap="xs" withIndicator loop slideSize={size}>
+    <Carousel align="start" slideGap="xs" loop slideSize={size}>
       {images.map((image, index) => (
         <img key={index} src={image} className={`h-${h} object-cover`} />
       ))}

@@ -7,6 +7,7 @@ import Car from "./Car";
 
 const BodyBackground = () => {
   const images = [
+    "src\\assets\\universal_house.jpg",
     "src\\assets\\carousel-1.jpg",
     "src\\assets\\carousel-2.jpg",
     "src\\assets\\carousel-3.jpg",

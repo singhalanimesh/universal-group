@@ -1,5 +1,4 @@
 import { universalTeam, universalTeamCard } from "../utils/textData";
-import Card from "./Card";
 
 const UniversalTeam = () => {
   return (
@@ -10,9 +9,12 @@ const UniversalTeam = () => {
         </h1>
         <p className=" mb-8 pb-7 font-semibold">{universalTeam["p"]}</p>
         <div className="flex flex-wrap">
-          {universalTeamCard.map(({ key, title }, index) => (
-            <div key={index} className="mx-auto w-[330px] my-4 lg:h-[408px] sm:w-[45%] ">
-              <Card keyProp={key} h="408px" title={title} />
+          {universalTeamCard.map((src, index) => (
+            <div
+              key={index}
+              className="mx-auto w-[330px] my-4 lg:h-[408px] sm:w-[45%] "
+            >
+              <img src={`src/assets/${src}.jpg`} className="rounded-lg" />
             </div>
           ))}
         </div>

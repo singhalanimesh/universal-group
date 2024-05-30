@@ -59,17 +59,24 @@ export const awardsCard = [
     title:
       "Awards Received for Highest VRV Sales in East, West Bengal and All India",
   },
+];
+export const custappreciationCard = [
   {
     key: "ps-certificate",
-    title: "Honoured to Recieve the PS Excellence Awards",
+    title:
+      "PS Excellance Award for HVAC Installations of PS One Ten, Anassa, Hazelton",
+  },
+  {
+    key: "godrej-certificate",
+    title: "Godrej Excellence Award for Project Quality of NH Hospital",
   },
 ];
 
 export const universalTeamCard = [
-  { key: "universal-team1", title: "" },
-  { key: "universal-team2", title: "" },
-  { key: "universal-team3", title: "" },
-  { key: "universal-team4", title: "" },
+  "universal-team1",
+  "universal-team2",
+  "universal-team3",
+  "universal-team4",
 ];
 
 export const universalTeam = {

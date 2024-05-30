@@ -14,6 +14,8 @@ import Contact from "./Components/Contact";
 import Awards from "./Components/Awards";
 import UniversalTeam from "./Components/UniversalTeam";
 import Footer from "./Components/Footer";
+import CustomerAppreciation from "./Components/CustomerAppreciation";
+import Error from "./Components/Error";
 
 const CurrentPortfolio = lazy(() => import("./Components/CurrentPortfolio"));
 const CompletedPortfolio = lazy(() =>
@@ -86,9 +88,18 @@ const appRouter = createBrowserRouter([
         path: "/universal-team",
         element: <UniversalTeam />,
       },
+      {
+        path: "/customer-appreciation",
+        element: <CustomerAppreciation />,
+      },
     ],
+    errorElement: <Error />,
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<React.StrictMode><RouterProvider router={appRouter} /></React.StrictMode>);
+root.render(
+  <React.StrictMode>
+    <RouterProvider router={appRouter} />
+  </React.StrictMode>
+);

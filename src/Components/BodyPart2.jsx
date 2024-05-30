@@ -46,7 +46,7 @@ const BodyPart2 = () => {
             ))}
           </div>
           <Link
-            to="/current-projects"
+            to="/completed-projects"
             onClick={handleLink}
             className="p-4 rounded-full text-white bg-[#18d26e] hover:bg-[#13a456]"
           >

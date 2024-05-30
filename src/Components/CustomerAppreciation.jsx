@@ -1,19 +1,19 @@
-import { awardsCard } from "../utils/textData";
+import { custappreciationCard } from "../utils/textData";
 import Card from "./Card";
 
-const Awards = () => {
+const CustomerAppreciation = () => {
   return (
     <div className="bg-[#e3f5f8] pt-28 px-8">
       <div className="m-auto text-center flex-col align-middle xl:w-[1110px]">
         <h1 className="m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e] lg:w-6/12">
-          AWARDS AND ACHIEVEMENTS
+          CUSTOMER APPRECIATION
         </h1>
         <p className="mb-8 pb-7 font-semibold">
-          Top Performer Dealer of Daikin VRV System in Whole of India. Top
-          Performer Dealer of Hitachi in Eastern India.
+          A Happy Customer is our Best Advertisement. Universal strives to
+          exceed expectations always.
         </p>
         <div className="flex flex-wrap">
-          {awardsCard.map(({ key, title }, index) => (
+          {custappreciationCard.map(({ key, title }, index) => (
             <div
               key={index}
               className="mx-auto my-4 lg:h-[408px] sm:w-[450px] "
@@ -27,4 +27,4 @@ const Awards = () => {
   );
 };
 
-export default Awards;
+export default CustomerAppreciation;

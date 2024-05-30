@@ -59,13 +59,18 @@ const Header1 = () => {
 
             <Dropdown
               title="ABOUT"
-              links={["about-us", "awards-and-achievements", "universal-team"]}
+              links={[
+                "about-us",
+                "customer-appreciation",
+                "awards-and-achievements",
+                "universal-team",
+              ]}
               menu={toggleMenu}
             />
 
             <Dropdown
               title="PORTFOLIO"
-              links={["current-projects", "completed-projects"]}
+              links={["completed-projects", "current-projects"]}
               menu={toggleMenu}
             />
 

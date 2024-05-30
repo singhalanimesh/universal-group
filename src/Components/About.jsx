@@ -24,9 +24,14 @@ const About = () => {
             {aboutTextCard.map(({ key, value, title }, index) => (
               <div
                 key={index}
-                className="w-[60%] mx-auto my-4 h-[476px] md:w-[50.1%] lg:w-[30%]"
+                className="w-full mx-auto my-4 h-[476px] sm:w-[60%] md:w-[45%] lg:w-[30%]"
               >
-                <Card keyProp={key} h="476px" text={value} title={title} />
+                <Card
+                  keyProp={key}
+                  h="h-[476px] mx-auto w-[280px] sm:w-full"
+                  text={value}
+                  title={title}
+                />
               </div>
             ))}
           </div>
