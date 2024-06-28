@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { universalTeam } from "../utils/textData";
+import { universalTeam } from "../utils/textData.js";
 import BodyPart1 from "./BodyPart1";
 import BodyPart2 from "./BodyPart2";
 import BodyBackground from "./BodyBackground";
