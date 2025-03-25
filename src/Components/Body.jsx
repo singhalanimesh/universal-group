@@ -30,11 +30,11 @@ const Body = () => {
           {universalTeam["p"]}
           <div className="flex flex-wrap justify-around py-8">
             <img
-              src="src\assets\motivation-tour-1.jpeg"
+              src="images/motivation-tour-1.jpeg"
               className="mx-auto w-[520px] rounded-md m-4"
             />
             <img
-              src="src\assets\motivation-tour-2.jpeg"
+              src="images/motivation-tour-2.jpeg"
               className="mx-auto w-[520px] rounded-md m-4"
             />
           </div>

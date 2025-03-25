@@ -56,7 +56,7 @@ const About = () => {
               ))}
             </div>
             <div className="w-[450px] px-4 md:w-2/4">
-              <img src="src\assets\universal_about.jpg" alt="" />
+              <img src="images/universal_about.jpg" alt="" />
             </div>
           </div>
 
@@ -69,7 +69,7 @@ const About = () => {
 
           <div className="my-4 justify-center flex flex-wrap">
             <div className="w-96 px-4 md:w-2/4 ">
-              <img src="src\assets\universal_group.png" alt="" />
+              <img src="images/universal_group.png" alt="" />
             </div>
             <div className="w-[324px] px-4 m-auto md:w-2/5">
               {aboutTextCompany.map(({ key, value }, index) => (

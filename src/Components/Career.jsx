@@ -16,7 +16,7 @@ const Career = () => {
         <div className="flex flex-wrap justify-center align-top xl:justify-between">
           <div>
             <img
-              src="src/assets/career.png"
+              src="images/career.png"
               className="w-[490px] xl:w-[600px]"
             />
           </div>

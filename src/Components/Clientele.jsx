@@ -2,15 +2,15 @@ import Car from "./Car";
 
 const Clientele = () => {
   const images = [
-    "src/assets/clientele/alcove_logo.jpg",
-    "src/assets/clientele/diamond_logo.jpg",
-    "src/assets/clientele/iit-patna_logo.jpg",
-    "src/assets/clientele/merlin_logo.jpg",
-    "src/assets/clientele/orbitgroup_logo.jpg",
-    "src/assets/clientele/peerless_logo.jpg",
-    "src/assets/clientele/psgroup_logo.jpg",
-    "src/assets/clientele/quest-mall-kolkata-logo.jpg",
-    "src/assets/clientele/siddha_logo.jpg",
+    "images/clientele/diamond_logo.jpg",
+    "images/clientele/alcove_logo.jpg",
+    "images/clientele/iit-patna_logo.jpg",
+    "images/clientele/merlin_logo.jpg",
+    "images/clientele/orbitgroup_logo.jpg",
+    "images/clientele/peerless_logo.jpg",
+    "images/clientele/psgroup_logo.jpg",
+    "images/clientele/quest-mall-kolkata-logo.jpg",
+    "images/clientele/siddha_logo.jpg",
   ];
 
   return (

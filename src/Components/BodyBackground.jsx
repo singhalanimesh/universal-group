@@ -7,10 +7,10 @@ import Car from "./Car";
 
 const BodyBackground = () => {
   const images = [
-    "src\\assets\\universal_house.jpg",
-    "src\\assets\\carousel-1.jpg",
-    "src\\assets\\carousel-2.jpg",
-    "src\\assets\\carousel-3.jpg",
+    "images\\Universal_House.jpg",
+    "images\\carousel-1.jpg",
+    "images\\carousel-2.jpg",
+    "images\\carousel-3.jpg",
   ];
   return (
     <div>
@@ -18,7 +18,7 @@ const BodyBackground = () => {
         <Car h={"screen opacity-40"} images={images} />
         <div className="absolute inset-0 flex justify-center h-52 my-auto">
           <div>
-            <img src="src/assets/Universal_Logo.png" className="h-32" />
+            <img src="images/Universal_Logo.png" className="h-32" />
             <p className="text-center text-[#005294] font-bold">
               Universal is a complete HVAC <br />
               (Heating Ventilation and Air-Conditioning)

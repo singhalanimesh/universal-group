@@ -14,7 +14,7 @@ const UniversalTeam = () => {
               key={index}
               className="mx-auto w-[330px] my-4 lg:h-[408px] sm:w-[45%] "
             >
-              <img src={`src/assets/${src}.jpg`} className="rounded-lg" />
+              <img src={`images/${src}.jpg`} className="rounded-lg" />
             </div>
           ))}
         </div>

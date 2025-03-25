@@ -9,7 +9,7 @@ const CurrentPortfolio = () => {
         <h1 className="m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e] sm:w-3/12 ">
           OUR PORTFOLIO
         </h1>
-        <div className="flex flex-wrap my-4">
+        <div className="flex flex-wrap mt-4">
           {portfolioTextCurrent.map(({ name, location, tr, id }, index) => (
             <div key={index} className="m-auto w-[330px]">
               <PortfolioCard
