@@ -29,13 +29,6 @@ export const aboutTextCard = [
   },
 ];
 
-export const aboutTextService = [
-  "Complete HVAC Solutions (Design to execution and maintenance)",
-  "Ventilation System (Kitchen, Basement, Car-Park etc)",
-  "Power Management (Complete Power Infrastructure Planning)",
-  "Fire Engineering (Design to execution)",
-];
-
 export const aboutTextCompany = [
   {
     key: "Universal Energy Solutions (P) Ltd.",
@@ -49,69 +42,87 @@ export const aboutTextCompany = [
   },
 ];
 
+export const aboutTextService = [
+  "Complete HVAC Solutions (Design to execution and maintenance)",
+  "Ventilation System (Kitchen, Basement, Car-Park etc)",
+  "Power Management (Complete Power Infrastructure Planning)",
+  "Fire Engineering (Design to execution)",
+];
+
 export const awardsCard = [
   {
-    key: "all-india-highest-vrv-sales",
+    key: "all-india-highest-vrv-sales-24",
+    title: "UNIVERSAL Wins Daikin All India Highest VRV Sales Award FY 2023-24",
+  },
+  {
+    key: "awards-24",
+    title:
+      "Awards Received for Highest VRV Sales in West Bengal, East Region and All India & Highest Sales and Service Turnover FY 2023-24",
+  },
+  {
+    key: "all-india-highest-vrv-sales-23",
     title: "UNIVERSAL Wins Daikin All India Highest VRV Sales Award FY 2022-23",
   },
   {
-    key: "awards",
+    key: "awards-23",
     title:
-      "Awards Received for Highest VRV Sales in East, West Bengal and All India",
-  },
-];
-export const custappreciationCard = [
-  {
-    key: "ps-certificate",
-    title:
-      "PS Excellance Award for HVAC Installations of PS One Ten, Anassa, Hazelton",
-  },
-  {
-    key: "godrej-certificate",
-    title: "Godrej Excellence Award for Project Quality of NH Hospital",
+      "Awards Received for Highest VRV Sales in West Bengal, East Region and All India FY 2022-23",
   },
 ];
 
-export const universalTeamCard = [
-  "universal-team1",
-  "universal-team2",
-  "universal-team3",
-  "universal-team4",
-];
-
-export const universalTeam = {
-  p: "UNIVERSAL is a happy group with absolutely no discrimination based on class, creed, religion, gender, what-so-ever. The happy photograph of our Annual Motivation Tour is a testimony to this cohesiveness.",
-};
-
-export const serviceText = {
-  p: "We offer the full spectrum of services to help organizations work better. We have a dedicated service team that specialized in Airconditioning, Ventilation, Fire Protection, Power Management in Eastern India. We pride ourselves on service excellence to the residential, commercial and industrial markets whether it is the supply of a new solution or maintenance of an existing system.",
-};
-
-export const serviceTextCard = [
+export const bodyTextCard = [
   {
     key: "conditioning",
     title: "Air-Conditioning",
     value:
-      "We are authorized Sales and Service Dealers of Daikin And Hitachi, serving Eastern India with energy-efficient solutions for the building sector. Specializing in air-conditioning for Hotels, Shopping Malls, Schools, Universities, Hospitals, and Residential & Commercial buildings, we handle Projects from Design and Planning to Execution, Commissioning, Testing and Hand-Over, providing comprehensive after-sales service with our experienced team of Technicians and Engineers.",
+      "We are authorized Sales and Service Dealers of Daikin And Hitachi, serving Eastern India with energy-efficient solutions for the building sector. Specializing in air-conditioning for Hotels, Shopping Malls, Schools, Universities, Hospitals, and Residential & Com ...",
   },
   {
     key: "ventilation",
     title: "Ventilation",
     value:
-      "With the rise of Multi-Storey buildings and ever increasing cost of space, mostly all commercial buildings have multi-layer basement and being used for car-park. Therefore the rise of ventilation systems in the market to handle adverse scenarios of Fire as well. We specialize in Basement Ventilation, Car-park Ventilation, Lift Lobby Pressurisation, Staircase Pressurisation and Kitchen Ventilation. Our team of Engineers design systems that are effective and energy efficient as well.",
+      "With the rise of Multi-Storey buildings and ever increasing cost of space, mostly all commercial buildings have multi-layer basement and being used for car-park. Therefore the rise of ventilation systems in the market to handle adverse scenarios of Fire as  well. We spec...",
   },
   {
     key: "fire",
     title: "Fire",
     value:
-      "Universal Group delivers industrial fire protection systems since inception, focusing on high-value life safety solutions for buildings, applications, and hazards. Our aim is to ensure customer productivity and safety by maintaining safety and production efficiency. Our dedicated technical and design team collaborates with clients to create tailored detection and suppression systems.",
+      "Universal Group delivers industrial fire protection systems since inception, focusing on high-value life safety solutions for buildings, applications, and hazards. Our aim is to ensure customer productivity and safety by maintaining safety and production efficiency...",
   },
   {
     key: "power",
     title: "Power",
     value:
-      "Universal Energy Solutions provides Power Management consultancy services to a diversified customer base. We are in the Energy Sector for more than two decades. Power management is a unique concept, wherein we provide consultancy services to big infrastructure projects for procuring power from providers like WBSEDCL, CESC Ltd., New Town Supply and others, in their respective zone of operation.",
+      "Universal Energy Solutions provides Power Management consultancy services to a diversified customer base. We are in the Energy Sector for more than two decades. Power management is a unique concept, wherein we provide consultancy services to big infra...",
   },
+];
+
+export const bodyTextIntro = [
+  {
+    name: "Residential",
+    value:
+      "A home that connects and gives comforts all with an AC system that saves electricity cost and we have a solution for all",
+    icon: "b",
+  },
+  {
+    name: "Hospitals",
+    value:
+      "Universal specialises in Design and Execution of HVAC System for entire Hospitals with efficient and cost effective solutions",
+    icon: "h",
+    color: "blue",
+  },
+  {
+    name: "Commercial",
+    value:
+      "We Provide Energy-Efficient Systems For Every Commercial Building demanding a system with aesthetics as well as comfort",
+    icon: "t",
+  },
+];
+
+export const bodyWelcomeText = [
+  "Universal Group, comprising of three companies - Universal Sales, Universal Sales & Projects, Universal Energy Solutions is a leading HVAC solution providing company in Eastern India, having core strength of engineering in all types of Air-Conditioning Solutions from design to execution and even maintenance of all types of air-conditioning plants in various types of applications.",
+
+  "The Company's expertise in project engineering contract jobs of HVAC, electrical, kitchen ventilation with Equipment & revamping of all above, Cold rooms & Storage System as well as BMS system makes this a trustworthy brand to bank upon for providing state-of-the-art engineering solutions.",
 ];
 
 export const careerP = {
@@ -187,60 +198,93 @@ export const contactText = [
   },
 ];
 
-export const bodyTextIntro = [
+export const custappreciationCard = [
   {
-    name: "Hospitals",
-    value:
-      "Universal specialises in Design and Execution of HVAC System for entire Hospitals with efficient and cost effective solutions",
-    icon: "h",
+    key: "ps-certificate",
+    title:
+      "PS Excellance Award for HVAC Installations of PS One Ten, Anassa, Hazelton",
   },
   {
-    name: "Commercial",
-    value:
-      "We Provide Energy-Efficient Systems For Every Commercial Building demanding a system with aesthetics as well as comfort",
-    icon: "t",
-    color: "blue",
-  },
-  {
-    name: "Residential",
-    value:
-      "A home that connects and gives comforts all with an AC system that saves electricity cost and we have a solution for all",
-    icon: "b",
+    key: "godrej-certificate",
+    title: "Godrej Excellence Award for Project Quality of NH Hospital",
   },
 ];
 
-export const bodyWelcomeText = [
-  "Universal Group, comprising of three companies - Universal Sales, Universal Sales & Projects, Universal Energy Solutions is a leading HVAC solution providing company in Eastern India, having core strength of engineering in all types of Air-Conditioning Solutions from design to execution and even maintenance of all types of air-conditioning plants in various types of applications.",
-
-  "The Company's expertise in project engineering contract jobs of HVAC, electrical, kitchen ventilation with Equipment & revamping of all above, Cold rooms & Storage System as well as BMS system makes this a trustworthy brand to bank upon for providing state-of-the-art engineering solutions.",
+export const imagesClients = [
+  "aditya-birla-group.jpg",
+  "ps-group.png",
+  "reliance-industries-ltd.png",
+  "esic.png",
+  "iit-patna.jpg",
+  "rp-sanjiv-goenka-group.jpg",
+  "sabyasachi.jpg",
+  "orbitgroup.jpg",
+  "iit-guwahati.png",
+  "alcove.jpg",
+  "merlin.jpg",
+  "diamond.png",
+  "peerless.png",
+  "siddha.png",
+  "adamas.png",
+  "quest-mall.jpg",
+  "ambuja.png",
+  "bengal-peerless.jpg",
+  "lux.png",
+  "manyavar.png",
+  "ozone.jpg",
+  "primarc.jpg",
+  "rdb.jpg",
+  "shyam-metalics.png",
 ];
 
-export const bodyTextCard = [
+export const imagesHero = [
+  "Universal_House.jpg",
+  "carousel-1.jpg",
+  "carousel-2.jpg",
+  "carousel-3.jpg",
+];
+
+export const serviceText = {
+  p: "We offer the full spectrum of services to help organizations work better. We have a dedicated service team that specialized in Airconditioning, Ventilation, Fire Protection, Power Management in Eastern India. We pride ourselves on service excellence to the residential, commercial and industrial markets whether it is the supply of a new solution or maintenance of an existing system.",
+};
+
+export const serviceTextCard = [
   {
     key: "conditioning",
     title: "Air-Conditioning",
     value:
-      "We are authorized Sales and Service Dealers of Daikin And Hitachi, serving Eastern India with energy-efficient solutions for the building sector. Specializing in air-conditioning for Hotels, Shopping Malls, Schools, Universities, Hospitals, and Residential & Com ...",
+      "We are authorized Sales and Service Dealers of Daikin And Hitachi, serving Eastern India with energy-efficient solutions for the building sector. Specializing in air-conditioning for Hotels, Shopping Malls, Schools, Universities, Hospitals, and Residential & Commercial buildings, we handle Projects from Design and Planning to Execution, Commissioning, Testing and Hand-Over, providing comprehensive after-sales service with our experienced team of Technicians and Engineers.",
   },
   {
     key: "ventilation",
     title: "Ventilation",
     value:
-      "With the rise of Multi-Storey buildings and ever increasing cost of space, mostly all commercial buildings have multi-layer basement and being used for car-park. Therefore the rise of ventilation systems in the market to handle adverse scenarios of Fire as  well. We spec...",
+      "With the rise of Multi-Storey buildings and ever increasing cost of space, mostly all commercial buildings have multi-layer basement and being used for car-park. Therefore the rise of ventilation systems in the market to handle adverse scenarios of Fire as well. We specialize in Basement Ventilation, Car-park Ventilation, Lift Lobby Pressurisation, Staircase Pressurisation and Kitchen Ventilation. Our team of Engineers design systems that are effective and energy efficient as well.",
   },
   {
     key: "fire",
     title: "Fire",
     value:
-      "Universal Group delivers industrial fire protection systems since inception, focusing on high-value life safety solutions for buildings, applications, and hazards. Our aim is to ensure customer productivity and safety by maintaining safety and production efficiency...",
+      "Universal Group delivers industrial fire protection systems since inception, focusing on high-value life safety solutions for buildings, applications, and hazards. Our aim is to ensure customer productivity and safety by maintaining safety and production efficiency. Our dedicated technical and design team collaborates with clients to create tailored detection and suppression systems.",
   },
   {
     key: "power",
     title: "Power",
     value:
-      "Universal Energy Solutions provides Power Management consultancy services to a diversified customer base. We are in the Energy Sector for more than two decades. Power management is a unique concept, wherein we provide consultancy services to big infra...",
+      "Universal Energy Solutions provides Power Management consultancy services to a diversified customer base. We are in the Energy Sector for more than two decades. Power management is a unique concept, wherein we provide consultancy services to big infrastructure projects for procuring power from providers like WBSEDCL, CESC Ltd., New Town Supply and others, in their respective zone of operation.",
   },
 ];
+
+export const universalTeamCard = [
+  "universal-team1",
+  "universal-team2",
+  "universal-team3",
+  "universal-team4",
+];
+
+export const universalTeam = {
+  p: "UNIVERSAL is a happy group with absolutely no discrimination based on class, creed, religion, gender, what-so-ever. The happy photograph of our Annual Motivation Tour is a testimony to this cohesiveness.",
+};
 
 export const footerDataP = [
   "We are an HVAC Solutions Company providing latest technologies and energy efficient solutions in entire East Zone for all applications over past three decades",

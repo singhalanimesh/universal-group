@@ -24,7 +24,7 @@ const Dropdown = ({ title, links, menu }) => {
       onMouseEnter={openToggle}
       onMouseLeave={closeToggle}
     >
-      <button className="flex items-center px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
+      <button className="flex items-center px-2 my-1 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
         {title}
         {isOpen ? (
           <FaAngleUp className="ml-2" />
@@ -46,7 +46,7 @@ const Dropdown = ({ title, links, menu }) => {
                 onClick={() => {
                   closeToggle(), handleClick(), menu();
                 }}
-                className="block px-4 py-2 text-[#003866] hover:text-[#18d26e]"
+                className="block px-2 py-2 text-[#003866] hover:text-[#18d26e]"
               >
                 {value
                   .replace(/-/g, " ")

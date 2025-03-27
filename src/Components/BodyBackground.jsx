@@ -2,23 +2,25 @@ import { FaHome } from "react-icons/fa";
 import { BiBuildings } from "react-icons/bi";
 import { LiaHospitalSolid } from "react-icons/lia";
 
-import { bodyTextIntro } from "../utils/textData";
+import { bodyTextIntro, imagesHero } from "../utils/textData";
 import Car from "./Car";
 
 const BodyBackground = () => {
-  const images = [
-    "images\\Universal_House.jpg",
-    "images\\carousel-1.jpg",
-    "images\\carousel-2.jpg",
-    "images\\carousel-3.jpg",
-  ];
   return (
     <div>
       <div className="relative">
-        <Car h={"screen opacity-40"} images={images} />
+        <Car
+          imageClass={"h-screen opacity-40"}
+          images={imagesHero}
+          source={`${import.meta.env.BASE_URL}images/`}
+          size="100%"
+        />
         <div className="absolute inset-0 flex justify-center h-52 my-auto">
           <div>
-            <img src="images/Universal_Logo.png" className="h-32" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/Universal_Logo.png`}
+              className="h-32"
+            />
             <p className="text-center text-[#005294] font-bold">
               Universal is a complete HVAC <br />
               (Heating Ventilation and Air-Conditioning)
@@ -44,7 +46,7 @@ const BodyBackground = () => {
                 <FaHome size="60" color="white" />
               )}
               <h4 className="my-4 text-lg text-white">{name}</h4>
-              <p className="text-white">{value}</p>
+              <p className="text-white text-justify">{value}</p>
             </div>
           ))}
         </div>

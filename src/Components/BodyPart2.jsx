@@ -17,11 +17,11 @@ const BodyPart2 = () => {
           </h1>
           <div className="flex justify-around">
             <img
-              src="images/Daikin.png"
+              src={`${import.meta.env.BASE_URL}images/Daikin.png`}
               className="m-auto h-32 sm:h-full"
             />
             <img
-              src="images/Hitachi.png"
+              src={`${import.meta.env.BASE_URL}images/Hitachi.png`}
               className="m-auto h-32 sm:h-full"
             />
           </div>

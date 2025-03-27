@@ -38,21 +38,21 @@ const Header1 = () => {
         </div>
 
         <div>
-          <div className={`sm:hidden px-4 pl-20`} onClick={toggleMenu}>
+          <div className={`md:hidden px-4 pl-20`} onClick={toggleMenu}>
             <LuMenu size={35} />
           </div>
 
           <div
             className={`${
-              isMenuOpen || currentWidth > 640 ? " " : "hidden"
-            } bg-white sm:bg-transparent mt-0 flex flex-col sm:flex-row sm:my-8 lg:mt-0 lg:pr-16 `}
+              isMenuOpen || currentWidth > 768 ? " " : "hidden"
+            } bg-white sm:bg-transparent mt-0 flex flex-col md:flex-row sm:my-8 lg:mt-0 lg:pr-16 `}
           >
             <Link
               to="/"
               onClick={() => {
                 toggleMenu(), handleClick();
               }}
-              className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+              className="px-2 my-1 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
             >
               HOME
             </Link>
@@ -83,17 +83,30 @@ const Header1 = () => {
               onClick={() => {
                 toggleMenu(), handleClick();
               }}
-              className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+              className="px-2 my-1 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
             >
               SERVICES
             </Link>
+
+            <div className="px-2 my-1 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm">
+              <button
+                onClick={() =>
+                  window.open(
+                    `${import.meta.env.BASE_URL}Universal_Credential.pdf`,
+                    "_blank"
+                  )
+                }
+              >
+                CREDENTIAL
+              </button>
+            </div>
 
             <Link
               to="/career"
               onClick={() => {
                 toggleMenu(), handleClick();
               }}
-              className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+              className="px-2 my-1 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
             >
               CAREER
             </Link>
@@ -103,7 +116,7 @@ const Header1 = () => {
               onClick={() => {
                 toggleMenu(), handleClick();
               }}
-              className="px-4 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
+              className="px-2 my-1 transition duration-300 text-[#003866] hover:text-[#18d26e] font-bold text-sm"
             >
               CONTACT US
             </Link>

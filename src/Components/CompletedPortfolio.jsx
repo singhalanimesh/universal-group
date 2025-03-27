@@ -8,8 +8,8 @@ const CompletedPortfolio = () => {
     <div>
       <div className="bg-[#e3f5f8] pt-28 pb-6 mb-8">
         <div className="m-auto text-center flex-col align-middle xl:w-[1110px]">
-          <h1 className="m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e] sm:w-3/12 ">
-            OUR PORTFOLIO
+          <h1 className="m-auto mb-8 text-[32px] font-bold border-b-[3px] border-[#18d26e] sm:w-5/12 ">
+            COMPLETED PROJECTS
           </h1>
           <p>
             Trust us before hiring us! Presenting some of our best works till
