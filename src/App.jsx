@@ -34,68 +34,76 @@ const AppLayout = () => {
   );
 };
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <AppLayout />,
-    children: [
-      {
-        path: "/",
-        element: <Body />,
-      },
-      {
-        path: "/about-us",
-        element: <About />,
-      },
-      {
-        path: "/services",
-        element: <Services />,
-      },
-      {
-        path: "/career",
-        element: <Career />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/completed-projects",
-        element: (
-          <Suspense
-            fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
-          >
-            <CompletedPortfolio />,
-          </Suspense>
-        ),
-      },
-      {
-        path: "/current-projects",
+const basename =
+  import.meta.env.MODE === "production" ? "/universal-group/" : "/";
 
-        element: (
-          <Suspense
-            fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
-          >
-            <CurrentPortfolio />,
-          </Suspense>
-        ),
-      },
-      {
-        path: "/awards-and-achievements",
-        element: <Awards />,
-      },
-      {
-        path: "/universal-team",
-        element: <UniversalTeam />,
-      },
-      {
-        path: "/customer-appreciation",
-        element: <CustomerAppreciation />,
-      },
-    ],
-    errorElement: <Error />,
-  },
-]);
+const appRouter = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Body />,
+        },
+        {
+          path: "/about-us",
+          element: <About />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
+        },
+        {
+          path: "/career",
+          element: <Career />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+        {
+          path: "/completed-projects",
+          element: (
+            <Suspense
+              fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
+            >
+              <CompletedPortfolio />,
+            </Suspense>
+          ),
+        },
+        {
+          path: "/current-projects",
+
+          element: (
+            <Suspense
+              fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
+            >
+              <CurrentPortfolio />,
+            </Suspense>
+          ),
+        },
+        {
+          path: "/awards-and-achievements",
+          element: <Awards />,
+        },
+        {
+          path: "/universal-team",
+          element: <UniversalTeam />,
+        },
+        {
+          path: "/customer-appreciation",
+          element: <CustomerAppreciation />,
+        },
+      ],
+      errorElement: <Error />,
+    },
+  ],
+  {
+    basename,
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
