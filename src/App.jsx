@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import React, { lazy, Suspense } from "react";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
@@ -34,76 +34,68 @@ const AppLayout = () => {
   );
 };
 
-const basename =
-  import.meta.env.MODE === "production" ? "/universal-group/" : "/";
-
-const appRouter = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <AppLayout />,
-      children: [
-        {
-          path: "/",
-          element: <Body />,
-        },
-        {
-          path: "/about-us",
-          element: <About />,
-        },
-        {
-          path: "/services",
-          element: <Services />,
-        },
-        {
-          path: "/career",
-          element: <Career />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
-        {
-          path: "/completed-projects",
-          element: (
-            <Suspense
-              fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
-            >
-              <CompletedPortfolio />,
-            </Suspense>
-          ),
-        },
-        {
-          path: "/current-projects",
-
-          element: (
-            <Suspense
-              fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
-            >
-              <CurrentPortfolio />,
-            </Suspense>
-          ),
-        },
-        {
-          path: "/awards-and-achievements",
-          element: <Awards />,
-        },
-        {
-          path: "/universal-team",
-          element: <UniversalTeam />,
-        },
-        {
-          path: "/customer-appreciation",
-          element: <CustomerAppreciation />,
-        },
-      ],
-      errorElement: <Error />,
-    },
-  ],
+const appRouter = createHashRouter([
   {
-    basename,
-  }
-);
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about-us",
+        element: <About />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/career",
+        element: <Career />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/completed-projects",
+        element: (
+          <Suspense
+            fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
+          >
+            <CompletedPortfolio />,
+          </Suspense>
+        ),
+      },
+      {
+        path: "/current-projects",
+
+        element: (
+          <Suspense
+            fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
+          >
+            <CurrentPortfolio />,
+          </Suspense>
+        ),
+      },
+      {
+        path: "/awards-and-achievements",
+        element: <Awards />,
+      },
+      {
+        path: "/universal-team",
+        element: <UniversalTeam />,
+      },
+      {
+        path: "/customer-appreciation",
+        element: <CustomerAppreciation />,
+      },
+    ],
+    errorElement: <Error />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
