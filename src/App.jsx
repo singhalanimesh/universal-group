@@ -63,7 +63,7 @@ const appRouter = createHashRouter([
         path: "/completed-projects",
         element: (
           <Suspense
-            fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
+            fallback={<div className="h-screen bg-[#e3f5f8]"></div>}
           >
             <CompletedPortfolio />,
           </Suspense>
@@ -74,7 +74,7 @@ const appRouter = createHashRouter([
 
         element: (
           <Suspense
-            fallback={<div className="h-screen bg-[#e3f5f8[#e3f5f8"></div>}
+            fallback={<div className="h-screen bg-[#e3f5f8]"></div>}
           >
             <CurrentPortfolio />,
           </Suspense>
